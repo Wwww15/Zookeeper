@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.util.concurrent.CountDownLatch;
 
 /**
- * Hello world!
+ * 建立会话
  *
  */
 public class ZookeeperSession implements Watcher
@@ -29,6 +29,10 @@ public class ZookeeperSession implements Watcher
      */
     @Override
     public void process(WatchedEvent event) {
-        System.out.println(event.getState());
+        if(event.getState()==Event.KeeperState.SyncConnected)
+        {
+            System.out.println(event.getState());
+            countDownLatch.countDown();
+        }
     }
 }
