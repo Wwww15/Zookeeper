@@ -24,13 +24,11 @@ import org.apache.zookeeper.inspector.manager.ZooInspectorManager;
 import javax.swing.*;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
-import java.awt.*;
 import java.awt.datatransfer.Transferable;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
 import java.io.IOException;
-import java.util.*;
 
 /**
  * A {@link JDialog} for configuring which {@link ZooInspectorNodeViewer}s to

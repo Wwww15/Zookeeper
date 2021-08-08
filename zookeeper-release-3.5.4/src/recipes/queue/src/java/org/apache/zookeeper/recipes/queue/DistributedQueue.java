@@ -18,7 +18,7 @@
 
 package org.apache.zookeeper.recipes.queue;
 
-import org.apache.zookeeper.*;
+import org.apache.zookeeper.KeeperException;
 import org.apache.zookeeper.data.ACL;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

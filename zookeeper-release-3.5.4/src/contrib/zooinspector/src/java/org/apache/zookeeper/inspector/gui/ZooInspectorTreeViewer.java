@@ -25,10 +25,6 @@ import org.apache.zookeeper.inspector.manager.ZooInspectorManager;
 
 import javax.swing.*;
 import javax.swing.event.TreeSelectionListener;
-import javax.swing.tree.*;
-import java.awt.*;
-import java.awt.event.*;
-import java.util.*;
 
 import static javax.swing.KeyStroke.getKeyStroke;
 

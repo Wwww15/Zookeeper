@@ -20,7 +20,6 @@ package org.apache.zookeeper.inspector.gui;
 
 import org.apache.zookeeper.inspector.logger.LoggerFactory;
 
-import javax.swing.*;
 import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;

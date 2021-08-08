@@ -21,7 +21,6 @@ package org.apache.zookeeper.server.jersey.filters;
 import com.sun.jersey.core.util.Base64;
 import org.apache.zookeeper.server.jersey.cfg.Credentials;
 
-import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;

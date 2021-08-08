@@ -17,11 +17,12 @@
  */
 package org.apache.zookeeper.inspector.manager;
 
-import org.apache.zookeeper.*;
+import org.apache.zookeeper.KeeperException;
 import org.apache.zookeeper.Watcher.Event.EventType;
 import org.apache.zookeeper.Watcher.Event.KeeperState;
 import org.apache.zookeeper.ZooDefs.Ids;
 import org.apache.zookeeper.ZooDefs.Perms;
+import org.apache.zookeeper.ZooKeeper;
 import org.apache.zookeeper.data.ACL;
 import org.apache.zookeeper.data.Stat;
 import org.apache.zookeeper.inspector.encryption.BasicDataEncryptionManager;
@@ -29,8 +30,7 @@ import org.apache.zookeeper.inspector.encryption.DataEncryptionManager;
 import org.apache.zookeeper.inspector.logger.LoggerFactory;
 import org.apache.zookeeper.retry.ZooKeeperRetry;
 
-import java.io.*;
-import java.util.*;
+import java.io.IOException;
 
 /**
  * A default implementation of {@link ZooInspectorManager} for connecting to

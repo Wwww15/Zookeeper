@@ -19,8 +19,6 @@ package org.apache.zookeeper.inspector.gui;
 
 import org.apache.zookeeper.inspector.logger.LoggerFactory;
 
-import javax.swing.*;
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.IOException;
