@@ -18,12 +18,9 @@
 
 package org.apache.zookeeper.server.jersey;
 
-import java.io.IOException;
-
-import javax.ws.rs.core.MediaType;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import com.sun.jersey.api.client.ClientResponse;
+import com.sun.jersey.api.client.WebResource;
+import com.sun.jersey.api.client.WebResource.Builder;
 import org.apache.zookeeper.KeeperException;
 import org.apache.zookeeper.ZooKeeper;
 import org.apache.zookeeper.data.Stat;
@@ -31,11 +28,11 @@ import org.apache.zookeeper.server.jersey.jaxb.ZSession;
 import org.codehaus.jettison.json.JSONException;
 import org.junit.Assert;
 import org.junit.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-import com.sun.jersey.api.client.Client;
-import com.sun.jersey.api.client.ClientResponse;
-import com.sun.jersey.api.client.WebResource;
-import com.sun.jersey.api.client.WebResource.Builder;
+import javax.ws.rs.core.MediaType;
+import java.io.IOException;
 
 public class SessionTest extends Base {
     protected static final Logger LOG = LoggerFactory.getLogger(SessionTest.class);

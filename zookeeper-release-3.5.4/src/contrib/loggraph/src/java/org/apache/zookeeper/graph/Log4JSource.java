@@ -17,28 +17,21 @@
  */
 package org.apache.zookeeper.graph;
 
-import java.io.File;
-import java.io.InputStreamReader;
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.regex.Pattern;
-import java.util.regex.Matcher;
-import java.util.ArrayList;
-import java.util.Date;
-import java.text.SimpleDateFormat;
-import java.text.ParseException;
-import java.util.Calendar;
-import java.util.GregorianCalendar;
-
-import java.io.EOFException;
-import java.io.Closeable;
-import java.io.FileNotFoundException;
-import java.util.Iterator;
-import java.util.NoSuchElementException;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.io.EOFException;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
+import java.util.NoSuchElementException;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Log4JSource implements LogSource {
     private static final Logger LOG = LoggerFactory.getLogger(Log4JSource.class);

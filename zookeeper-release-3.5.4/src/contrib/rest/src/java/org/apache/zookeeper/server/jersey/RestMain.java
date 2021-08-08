@@ -18,22 +18,21 @@
 
 package org.apache.zookeeper.server.jersey;
 
-import java.io.File;
-import java.io.IOException;
-import java.net.URISyntaxException;
-import java.net.URL;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.apache.zookeeper.server.jersey.cfg.Credentials;
-import org.apache.zookeeper.server.jersey.cfg.Endpoint;
-import org.apache.zookeeper.server.jersey.cfg.RestCfg;
-import org.apache.zookeeper.server.jersey.filters.HTTPBasicAuth;
-
 import com.sun.grizzly.SSLConfig;
 import com.sun.grizzly.http.embed.GrizzlyWebServer;
 import com.sun.grizzly.http.servlet.ServletAdapter;
 import com.sun.jersey.spi.container.servlet.ServletContainer;
+import org.apache.zookeeper.server.jersey.cfg.Credentials;
+import org.apache.zookeeper.server.jersey.cfg.Endpoint;
+import org.apache.zookeeper.server.jersey.cfg.RestCfg;
+import org.apache.zookeeper.server.jersey.filters.HTTPBasicAuth;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.io.File;
+import java.io.IOException;
+import java.net.URISyntaxException;
+import java.net.URL;
 
 /**
  * Demonstration of how to run the REST service using Grizzly

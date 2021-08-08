@@ -16,8 +16,6 @@
  * limitations under the License.
  */
 package org.apache.zookeeper.graph;
-import java.util.Iterator;
-
 public interface LogSource extends Iterable<LogEntry> {
     public LogIterator iterator(long starttime, long endtime, FilterOp filter) throws IllegalArgumentException, FilterException;
 

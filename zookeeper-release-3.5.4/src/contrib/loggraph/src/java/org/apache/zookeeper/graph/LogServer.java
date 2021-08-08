@@ -17,21 +17,10 @@
  */
 package org.apache.zookeeper.graph;
 
-import java.io.IOException;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.ServletException;
- 
-import java.io.IOException;
- 
+import org.apache.zookeeper.graph.servlets.*;
 import org.eclipse.jetty.server.Server;
-import org.eclipse.jetty.server.Request;
-import org.eclipse.jetty.server.handler.AbstractHandler;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.servlet.ServletHolder;
-
-import org.apache.zookeeper.graph.servlets.*;
 
 public class LogServer extends ServletContextHandler {    
     public LogServer(MergedLogSource src) throws Exception {

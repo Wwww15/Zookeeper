@@ -17,9 +17,9 @@
  */
 package org.apache.zookeeper.inspector.gui;
 
-import java.util.List;
-
 import org.apache.zookeeper.inspector.gui.nodeviewer.ZooInspectorNodeViewer;
+
+import java.util.List;
 
 /**
  * A Listener for changes to the configuration of which node viewers are shown

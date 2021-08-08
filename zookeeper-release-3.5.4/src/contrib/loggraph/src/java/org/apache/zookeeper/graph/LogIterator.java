@@ -18,8 +18,8 @@
 package org.apache.zookeeper.graph;
 
 import java.io.Closeable;
-import java.util.Iterator;
 import java.io.IOException;
+import java.util.Iterator;
 
 public interface LogIterator extends Iterator<LogEntry>, Closeable {
     long size() throws IOException;;

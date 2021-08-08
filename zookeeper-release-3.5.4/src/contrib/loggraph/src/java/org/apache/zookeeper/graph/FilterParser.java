@@ -17,12 +17,11 @@
  */
 package org.apache.zookeeper.graph;
 
+import org.apache.zookeeper.graph.filterops.*;
+
+import java.io.IOException;
 import java.io.PushbackReader;
 import java.io.StringReader;
-import java.io.IOException;
-import java.util.ArrayList;
-
-import org.apache.zookeeper.graph.filterops.*;
 
 public class FilterParser {
     private PushbackReader reader;

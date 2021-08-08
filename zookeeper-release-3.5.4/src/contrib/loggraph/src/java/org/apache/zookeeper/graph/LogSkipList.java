@@ -17,12 +17,11 @@
  */
 package org.apache.zookeeper.graph;
 
-import java.util.List;
-import java.util.LinkedList;
-import java.util.NoSuchElementException;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.LinkedList;
+import java.util.NoSuchElementException;
 
 /**
 Generic skip list for holding a rough index of a log file. When the log file is loaded, this 

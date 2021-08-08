@@ -17,21 +17,19 @@
  */
 package org.apache.zookeeper.inspector.gui;
 
-import java.awt.BorderLayout;
-import java.util.ArrayList;
-import java.util.List;
+import org.apache.zookeeper.inspector.gui.nodeviewer.ZooInspectorNodeViewer;
+import org.apache.zookeeper.inspector.manager.ZooInspectorManager;
+import org.apache.zookeeper.inspector.manager.ZooInspectorNodeManager;
 
-import javax.swing.JPanel;
-import javax.swing.JTabbedPane;
+import javax.swing.*;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 import javax.swing.event.TreeSelectionEvent;
 import javax.swing.event.TreeSelectionListener;
 import javax.swing.tree.TreePath;
-
-import org.apache.zookeeper.inspector.gui.nodeviewer.ZooInspectorNodeViewer;
-import org.apache.zookeeper.inspector.manager.ZooInspectorManager;
-import org.apache.zookeeper.inspector.manager.ZooInspectorNodeManager;
+import java.awt.*;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * This is the {@link JPanel} which contains the {@link ZooInspectorNodeViewer}s

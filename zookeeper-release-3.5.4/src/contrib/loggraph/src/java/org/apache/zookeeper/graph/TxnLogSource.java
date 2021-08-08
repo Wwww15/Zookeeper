@@ -17,43 +17,22 @@
  */
 package org.apache.zookeeper.graph;
 
-import java.io.ByteArrayInputStream;
-import java.io.EOFException;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.text.DateFormat;
-import java.util.Date;
-import java.util.zip.Adler32;
-import java.util.zip.Checksum;
-import java.util.HashMap;
-
 import org.apache.jute.BinaryInputArchive;
-import org.apache.jute.InputArchive;
 import org.apache.jute.Record;
-import org.apache.zookeeper.server.TraceFormatter;
+import org.apache.zookeeper.ZooDefs.OpCode;
 import org.apache.zookeeper.server.persistence.FileHeader;
 import org.apache.zookeeper.server.persistence.FileTxnLog;
 import org.apache.zookeeper.server.util.SerializeUtils;
-import org.apache.zookeeper.txn.TxnHeader;
-
-import org.apache.zookeeper.ZooDefs.OpCode;
-
-import org.apache.zookeeper.txn.CreateSessionTxn;
-import org.apache.zookeeper.txn.CreateTxn;
-import org.apache.zookeeper.txn.DeleteTxn;
-import org.apache.zookeeper.txn.ErrorTxn;
-import org.apache.zookeeper.txn.SetACLTxn;
-import org.apache.zookeeper.txn.SetDataTxn;
-import org.apache.zookeeper.txn.TxnHeader;
-
-import java.io.File;
-import java.io.Closeable;
-import java.io.FileNotFoundException;
-import java.util.Iterator;
-import java.util.NoSuchElementException;
-
+import org.apache.zookeeper.txn.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.io.EOFException;
+import java.io.File;
+import java.io.IOException;
+import java.util.NoSuchElementException;
+import java.util.zip.Adler32;
+import java.util.zip.Checksum;
 
 public class TxnLogSource implements LogSource {
     private static final Logger LOG = LoggerFactory.getLogger(TxnLogSource.class);

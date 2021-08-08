@@ -17,12 +17,10 @@
  */
 package org.apache.zookeeper.graph;
 
-import java.io.IOException;
 import java.io.BufferedOutputStream;
 import java.io.FileOutputStream;
-import java.io.DataOutputStream;
+import java.io.IOException;
 import java.io.PrintStream;
-
 import java.util.HashSet;
 
 public class MeasureThroughput {

@@ -17,15 +17,13 @@
  */
 package org.apache.zookeeper.inspector.manager;
 
+import javax.swing.*;
 import java.io.File;
 import java.io.IOException;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 import java.util.Properties;
-
-import javax.swing.JComboBox;
-import javax.swing.JTextField;
 
 /**
  * A Manager for all interactions between the application and the Zookeeper

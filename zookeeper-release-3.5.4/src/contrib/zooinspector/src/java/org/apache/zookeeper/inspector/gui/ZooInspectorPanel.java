@@ -17,7 +17,14 @@
  */
 package org.apache.zookeeper.inspector.gui;
 
-import java.awt.BorderLayout;
+import org.apache.zookeeper.inspector.gui.actions.AddNodeAction;
+import org.apache.zookeeper.inspector.gui.actions.DeleteNodeAction;
+import org.apache.zookeeper.inspector.gui.nodeviewer.ZooInspectorNodeViewer;
+import org.apache.zookeeper.inspector.logger.LoggerFactory;
+import org.apache.zookeeper.inspector.manager.ZooInspectorManager;
+
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.IOException;
@@ -25,20 +32,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 import java.util.concurrent.ExecutionException;
-
-import javax.swing.JButton;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-import javax.swing.JSplitPane;
-import javax.swing.JToolBar;
-import javax.swing.SwingWorker;
-
-import org.apache.zookeeper.inspector.gui.actions.AddNodeAction;
-import org.apache.zookeeper.inspector.gui.actions.DeleteNodeAction;
-import org.apache.zookeeper.inspector.gui.nodeviewer.ZooInspectorNodeViewer;
-import org.apache.zookeeper.inspector.logger.LoggerFactory;
-import org.apache.zookeeper.inspector.manager.ZooInspectorManager;
 
 /**
  * The parent {@link JPanel} for the whole application

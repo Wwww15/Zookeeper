@@ -17,8 +17,9 @@
  */
 package org.apache.zookeeper.graph;
 
-import java.util.ArrayList;
 import org.apache.zookeeper.graph.filterops.*;
+
+import java.util.ArrayList;
 
 public abstract class FilterOp {
     protected ArrayList<FilterOp> subOps;

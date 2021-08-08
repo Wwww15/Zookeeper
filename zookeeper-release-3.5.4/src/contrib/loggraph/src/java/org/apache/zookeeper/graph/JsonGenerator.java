@@ -22,15 +22,10 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.JSONValue;
 
-import java.io.Writer;
-import java.io.OutputStreamWriter;
-import java.io.IOException;
-import java.util.regex.Pattern;
-import java.util.regex.Matcher;
 import java.util.HashSet;
 import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.ListIterator;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class JsonGenerator {
     private JSONObject root;

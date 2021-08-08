@@ -17,9 +17,9 @@
  */
 package org.apache.zookeeper.graph.filterops;
 
-import org.apache.zookeeper.graph.LogEntry;
-import org.apache.zookeeper.graph.FilterOp;
 import org.apache.zookeeper.graph.FilterException;
+import org.apache.zookeeper.graph.FilterOp;
+import org.apache.zookeeper.graph.LogEntry;
 
 public class NotOp extends FilterOp {
     public boolean matches(LogEntry entry) throws FilterException {

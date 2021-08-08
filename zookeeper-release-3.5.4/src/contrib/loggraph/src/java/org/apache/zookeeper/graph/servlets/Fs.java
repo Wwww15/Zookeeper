@@ -17,18 +17,12 @@
  */
 package org.apache.zookeeper.graph.servlets;
 
-import java.io.File;
-import java.io.IOException;
-import java.io.FileNotFoundException;
-
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.JSONValue;
+
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.Arrays;
 import java.util.Comparator;
 

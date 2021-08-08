@@ -18,22 +18,21 @@
 
 package org.apache.zookeeper.server.jersey;
 
-import java.io.ByteArrayInputStream;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import com.sun.jersey.api.client.Client;
+import com.sun.jersey.api.client.WebResource;
 import org.apache.zookeeper.CreateMode;
 import org.apache.zookeeper.JUnit4ZKTestRunner;
-import org.apache.zookeeper.ZooKeeper;
 import org.apache.zookeeper.ZooDefs.Ids;
+import org.apache.zookeeper.ZooKeeper;
 import org.apache.zookeeper.server.jersey.SetTest.MyWatcher;
 import org.apache.zookeeper.server.jersey.cfg.RestCfg;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.runner.RunWith;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-import com.sun.jersey.api.client.Client;
-import com.sun.jersey.api.client.WebResource;
+import java.io.ByteArrayInputStream;
 
 /**
  * Test stand-alone server.

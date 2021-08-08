@@ -17,15 +17,14 @@
  */
 package org.apache.zookeeper.inspector.gui.nodeviewer;
 
+import org.apache.zookeeper.inspector.manager.ZooInspectorNodeManager;
+
+import javax.swing.*;
 import java.awt.datatransfer.DataFlavor;
 import java.awt.datatransfer.Transferable;
 import java.awt.datatransfer.UnsupportedFlavorException;
 import java.io.IOException;
 import java.util.List;
-
-import javax.swing.JPanel;
-
-import org.apache.zookeeper.inspector.manager.ZooInspectorNodeManager;
 
 /**
  * A {@link JPanel} for displaying information about the currently selected

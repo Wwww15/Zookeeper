@@ -18,14 +18,14 @@
 
 package org.apache.zookeeper.server.jersey.resources;
 
+import org.apache.zookeeper.KeeperException;
+import org.apache.zookeeper.server.jersey.jaxb.ZError;
+
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.UriInfo;
 import javax.ws.rs.ext.ExceptionMapper;
 import javax.ws.rs.ext.Provider;
-
-import org.apache.zookeeper.KeeperException;
-import org.apache.zookeeper.server.jersey.jaxb.ZError;
 
 
 /**

@@ -17,15 +17,11 @@
  */
 package org.apache.zookeeper.inspector.gui.actions;
 
-import org.apache.zookeeper.inspector.gui.ZooInspectorPanel;
 import org.apache.zookeeper.inspector.gui.ZooInspectorTreeViewer;
 import org.apache.zookeeper.inspector.manager.ZooInspectorManager;
 
-import javax.swing.*;
 import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.util.List;
-import java.awt.event.KeyEvent;
 
 public class AddNodeAction extends AbstractAction {
 

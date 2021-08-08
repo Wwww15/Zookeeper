@@ -17,42 +17,19 @@
  */
 package org.apache.zookeeper.inspector.gui;
 
-import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.InputEvent;
-import java.awt.event.KeyEvent;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Enumeration;
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-
-import javax.swing.ImageIcon;
-import javax.swing.JMenuItem;
-import javax.swing.JPanel;
-import javax.swing.JPopupMenu;
-import javax.swing.JComponent;
-import javax.swing.JTree;
-import javax.swing.SwingWorker;
-import javax.swing.event.TreeSelectionListener;
-import javax.swing.tree.DefaultMutableTreeNode;
-import javax.swing.tree.DefaultTreeCellRenderer;
-import javax.swing.tree.DefaultTreeModel;
-import javax.swing.tree.TreeNode;
-import javax.swing.tree.TreePath;
-
+import com.nitido.utils.toaster.Toaster;
 import org.apache.zookeeper.inspector.gui.actions.AddNodeAction;
 import org.apache.zookeeper.inspector.gui.actions.DeleteNodeAction;
 import org.apache.zookeeper.inspector.manager.NodeListener;
 import org.apache.zookeeper.inspector.manager.ZooInspectorManager;
 
-import com.nitido.utils.toaster.Toaster;
+import javax.swing.*;
+import javax.swing.event.TreeSelectionListener;
+import javax.swing.tree.*;
+import java.awt.*;
+import java.awt.event.*;
+import java.util.*;
+
 import static javax.swing.KeyStroke.getKeyStroke;
 
 /**

@@ -36,11 +36,6 @@
  */
 package com.nitido.utils.toaster;
 
-import java.awt.*;
-
-import javax.swing.*;
-import javax.swing.border.*;
-
 /**
  * Class to show tosters in multiplatform
  *

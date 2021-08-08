@@ -18,20 +18,18 @@
 
 package org.apache.zookeeper.server.jersey.resources;
 
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
-
-import javax.ws.rs.ext.ContextResolver;
-import javax.ws.rs.ext.Provider;
-import javax.xml.bind.JAXBContext;
-
+import com.sun.jersey.api.json.JSONConfiguration;
+import com.sun.jersey.api.json.JSONJAXBContext;
 import org.apache.zookeeper.server.jersey.jaxb.ZChildrenJSON;
 import org.apache.zookeeper.server.jersey.jaxb.ZPath;
 import org.apache.zookeeper.server.jersey.jaxb.ZStat;
 
-import com.sun.jersey.api.json.JSONConfiguration;
-import com.sun.jersey.api.json.JSONJAXBContext;
+import javax.ws.rs.ext.ContextResolver;
+import javax.ws.rs.ext.Provider;
+import javax.xml.bind.JAXBContext;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Tell Jersey how to resolve JSON formatting. Specifically detail the

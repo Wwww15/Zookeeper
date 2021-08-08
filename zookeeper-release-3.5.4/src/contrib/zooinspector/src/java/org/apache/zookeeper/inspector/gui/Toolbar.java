@@ -18,12 +18,10 @@
 
 package org.apache.zookeeper.inspector.gui;
 
+import javax.swing.*;
 import java.awt.event.ActionListener;
 import java.util.HashMap;
 import java.util.Map;
-
-import javax.swing.JButton;
-import javax.swing.JToolBar;
 
 public class Toolbar {
 

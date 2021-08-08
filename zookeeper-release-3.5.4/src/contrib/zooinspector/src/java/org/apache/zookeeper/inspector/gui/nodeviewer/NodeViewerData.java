@@ -17,23 +17,17 @@
  */
 package org.apache.zookeeper.inspector.gui.nodeviewer;
 
-import java.awt.BorderLayout;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.util.List;
-import java.util.concurrent.ExecutionException;
-
-import javax.swing.JButton;
-import javax.swing.JOptionPane;
-import javax.swing.JScrollPane;
-import javax.swing.JTextPane;
-import javax.swing.JToolBar;
-import javax.swing.SwingWorker;
-
 import org.apache.zookeeper.inspector.ZooInspector;
 import org.apache.zookeeper.inspector.gui.IconResource;
 import org.apache.zookeeper.inspector.logger.LoggerFactory;
 import org.apache.zookeeper.inspector.manager.ZooInspectorNodeManager;
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.List;
+import java.util.concurrent.ExecutionException;
 
 /**
  * A node viewer for displaying the data for the currently selected node

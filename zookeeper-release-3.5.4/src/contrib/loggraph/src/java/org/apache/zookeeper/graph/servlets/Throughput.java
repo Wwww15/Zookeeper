@@ -17,22 +17,12 @@
  */
 package org.apache.zookeeper.graph.servlets;
 
-import java.io.IOException;
-import java.io.BufferedOutputStream;
-import java.io.FileOutputStream;
-import java.io.DataOutputStream;
-import java.io.PrintStream;
-
-import java.util.HashSet;
-import java.util.LinkedHashMap;
-
 import org.apache.zookeeper.graph.*;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.JSONValue;
+
+import java.util.HashSet;
 
 
 public class Throughput extends JsonServlet
